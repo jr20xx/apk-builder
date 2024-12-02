@@ -1,5 +1,5 @@
 name: 'Build a debug or release APK'
-description: 'Build a debug or release APK with Gradle and upload it'
+description: 'Build a debug or release APK with Gradle'
 
 branding:
   icon: 'help-circle'
