@@ -7,7 +7,7 @@ branding:
 
 inputs:
   java-version:
-    description: 'JDK version to use to perform all operations'
+    description: 'The JDK version to use to perform all operations'
     required: false
     default: '17'
   java-distribution:
@@ -15,21 +15,17 @@ inputs:
     required: false
     default: 'temurin'
   encoded-keystore:
-    description: 'The Base64 encoded keystore used to sign the release APK'
+    description: 'The Base64 encoded keystore file used to sign the release APK'
     required: false
   keystore-password:
     description: 'The password of the keystore used to sign the release APK'
     required: false
   alias:
-    description: 'The alias inside the keystore used to sign the release APK'
+    description: 'The keystore's alias used to sign the release APK'
     required: false
   alias-password:
-    description: 'The password of the alias inside of the keystore used to sign the release APK'
+    description: 'The password of the keystore's alias used to sign the release APK'
     required: false
-  app-name:
-    description: 'The name of the app to build'
-    required: false
-    default: 'App'
 
 runs:
   using: "composite"
